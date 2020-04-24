@@ -4,8 +4,8 @@ import binascii
 from os import system, name
 import string
 
-invOffset = '0xAC3B90C0'
-countOffset = '0xAC3B90C4'
+invOffset = '0xAC4723D0'
+countOffset = '0xAC4723D4'
 
 def clear(): 
     if name == 'nt': 
@@ -50,7 +50,6 @@ s.connect(("192.168.254.85", 6000))
 
 
 def spawnItem():
-    sendCommand(s, "click X") 
     user_input = input("Enter ItemID: ")
     if(is_hex(user_input)):
         itemString = "0x" + formatID(user_input)
